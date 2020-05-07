@@ -7,6 +7,7 @@ Red Alert Classic dedicated server hosted on RaspberryPi.
 
 If you want to join a chill community, playing all sorts of game join [here](https://discord.gg/grZjzM3)
 
+To join the game use the OpenRA luncher and select The Chill RA server from the multiplayer menu.
 
 ### Requirements
 
