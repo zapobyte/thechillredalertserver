@@ -3,7 +3,7 @@
 
 Red Alert Classic dedicated server hosted on RaspberryPi. 
 
-[Discord Server](https://discord.com/assets/e7a3b51fdac2aa5ec71975d257d5c405.png) 
+![Discord Server](https://discord.com/assets/fc0b01fe10a0b8c602fb0106d8189d9b.png) 
 
 If you want to join a chill community, playing all sorts of game join [here](https://discord.gg/grZjzM3)
 
