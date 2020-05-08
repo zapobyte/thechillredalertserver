@@ -16,7 +16,7 @@ RequireAuthentication="${RequireAuthentication:-"False"}"
 ProfileIDBlacklist="${ProfileIDBlacklist:-""}"
 ProfileIDWhitelist="${ProfileIDWhitelist:-""}"
 
-EnableSingleplayer="${EnableSingleplayer:-"False"}"
+EnableSingleplayer="${EnableSingleplayer:-"True"}"
 EnableSyncReports="${EnableSyncReports:-"False"}"
 EnableGeoIP="${EnableGeoIP:-"True"}"
 ShareAnonymizedIPs="${ShareAnonymizedIPs:-"True"}"
