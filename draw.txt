@@ -1,5 +1,4 @@
-    _
-_ |             ***************************************
+    ___ |             ***************************************
     ___\|,--          ** The Chill Island Red Alert Server **
      ,-`=--.          ** hoted by zapo                     **
     ' /==8\           ** http://victorz.me                 **
@@ -12,4 +11,3 @@ _ |             ***************************************
 OpenRA - https://openra.net
 
 ** Games played on this server:
-229

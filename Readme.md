@@ -3,11 +3,21 @@
 
 Red Alert Classic dedicated server hosted on RaspberryPi. 
 
-![Discord Server](https://discord.com/assets/fc0b01fe10a0b8c602fb0106d8189d9b.png) 
-
-If you want to join a chill community, playing all sorts of game join [here](https://discord.gg/grZjzM3)
-
 To join the game use the OpenRA luncher and select The Chill RA server from the multiplayer menu.
+
+## Perks
+
+This server script can also updated the server message shown in ingame chat with a ASCII draw and number of games played on the server. 
+
+## How to use it.
+
+Before runing the actual server run `editmotd.sh` file to update the motd.txt file.
+
+- get a drawing in ASCII format and any additional text you want to have desplay and add it to `draw.txt` file.
+- configure `editmotd.sh` file to suite your needs. view `editmotd.sh` for more details. 
+- run `./editmotd.sh` using a cron job so it will restart every X amount of time.
+
+Note: Use pm2 log rotation for better performance.
 
 ### Requirements
 
@@ -16,10 +26,13 @@ To join the game use the OpenRA luncher and select The Chill RA server from the 
  - [OPENRA](https://github.com/OpenRA/OpenRA) - opensource Red Alert engine
  - Raspberypi >= 3b+ 
 
-### Installation ![](https://www.openra.net/images/icons/ra_64x64.png)  
+![](https://www.openra.net/images/icons/ra_64x64.png)  
 
+# Server setup and installationi
 
-Install dependencies if missing
+Follow the guide from OpenRA on how to setup or join the the Discord server. More information on their website here [OpenRA](https://openra.net).
+
+Install missing dependencies if needed:
 
 ```
 sudo apt-get install mono-runtime libmono2.0-cil libsdl2-2.0 \ 
@@ -29,5 +42,7 @@ sudo apt-get install mono-runtime libmono2.0-cil libsdl2-2.0 \
 ```
 
 After the game has been installed just run `launch-dedicated.sh` script. More details inside the script if you want to have it configured.
+
+To lunch the server use pm2 such as:
 
 `pm2 start ./launch-dedicated.sh`
