@@ -6,7 +6,7 @@
 #  $ Mod="d2k" ./launch-dedicated.sh # Launch a dedicated server with default settings but override the Mod
 #  Read the file to see which settings you can override
 
-Name="${Name:-"00 - The Chill Island RA server!"}"
+Name="${Name:-"|00|-The Chill Island OpenRA server"}"
 Mod="${Mod:-"ra"}"
 ListenPort="${ListenPort:-"1234"}"
 AdvertiseOnline="${AdvertiseOnline:-"True"}"

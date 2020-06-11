@@ -1,9 +1,9 @@
 # The Chill RA
 ![](https://cncnet.org/images/games/red-alert/logo.png)
 
-Red Alert Classic dedicated server hosted on RaspberryPi. 
+OpenRA Red Alert Classic dedicated server hosted on RaspberryPi 3b+. 
 
-To join the game use the OpenRA luncher and select The Chill RA server from the multiplayer menu.
+To join the game use the OpenRA luncher and select The Chill Island server from the multiplayer menu.
 
 ## Perks
 
@@ -15,12 +15,12 @@ Before runing the actual server run `editmotd.sh` file to update the motd.txt fi
 
 - get a drawing in ASCII format and any additional text you want to have desplay and add it to `draw.txt` file.
 - configure `editmotd.sh` file to suite your needs. view `editmotd.sh` for more details. 
-- run `./editmotd.sh` using a cron job so it will restart every X amount of time.
+- run `./editmotd.sh` using a cron job so it will restart and update file at desire times.
 
 Note: Use pm2 log rotation for better performance.
 
 ### Requirements
-
+ - RaspberyPi >= 3b+
  - [Nodejs/npm](https://nodejs.org/en/) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. (this is not necessary but helful to run the server. also this is how it is deployed on the server.)
  - [PM2](https://pm2.keymetrics.io/) - PM2 is a daemon process manager that will help you manage and keep your application online 24/7
  - [OPENRA](https://github.com/OpenRA/OpenRA) - opensource Red Alert engine
@@ -28,7 +28,7 @@ Note: Use pm2 log rotation for better performance.
 
 ![](https://www.openra.net/images/icons/ra_64x64.png)  
 
-# Server setup and installationi
+# Server setup and installation
 
 Follow the guide from OpenRA on how to setup or join the the Discord server. More information on their website here [OpenRA](https://openra.net).
 
