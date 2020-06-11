@@ -1,23 +1,20 @@
-# The Chill RA
+# The Chill Island OpenRA dedicated server
 ![](https://cncnet.org/images/games/red-alert/logo.png)
 
-OpenRA Red Alert Classic dedicated server hosted on RaspberryPi 3b+. 
+[OpenRA](https://openra.net) - Red Alert Classic dedicated server hosted on RaspberryPi 3b+. 
 
-To join the game use the OpenRA luncher and select The Chill Island server from the multiplayer menu.
+To join the game use the [OpenRA](https://openra.net) launcher and select The Chill Island server from the multiplayer menu.
 
-## Perks
+## About
 
-This scripts can also updated the server message shown in game, the `motd.txt` filei, with a ASCII draw and number of games played on the server. 
+- `./launch-dedicated.sh` - used to start the server. Original script from OpenRA server.
+- `./editmotd.sh` - script used to update the `motd.txt` file. this file must be eddited accordingly as per in-file instruction. More info on the `motd.txt` file [here](https://github.com/OpenRA/OpenRA/wiki/Dedicated)
+- `draw.txt` - text file containg your message(can be ascii draw);
+- `motd.txt` - the `motd.txt` file generated which will be copied to the server location
 
-## How to use it.
+Install pm2 to manage the server instance and store the output logs on the server. Using a cronjob on `./editmotd.sh` will make a repeat task job to update the Message of the day `motd.txt` file with your own.
 
-Before runing the actual server run `editmotd.sh` file to update the motd.txt file.
-
-- get a drawing in ASCII format and any additional text you want to have desplay and add it to `draw.txt` file.
-- configure `editmotd.sh` file to suite your needs. view `editmotd.sh` for more details. 
-- run `./editmotd.sh` using a cron job so it will restart and update file at desire times.
-
-Note: Use pm2 log rotation for better performance.
+Use pm2 log rotation for better performance.
 
 ### Requirements
  - RaspberyPi >= 3b+
@@ -28,9 +25,9 @@ Note: Use pm2 log rotation for better performance.
 
 ![](https://www.openra.net/images/icons/ra_64x64.png)  
 
-# Server setup and installation
+## Server setup and installation
 
-Follow the guide from OpenRA on how to setup or join the the Discord server. More information on their website here [OpenRA](https://openra.net).
+Follow the guide from [OpenRA](https://github.com/OpenRA/OpenRA/wiki/OpenRA-on-RaspberryPi) on how to setup or jioin the the Discord server. More information on their wiki here [OpenRA](https://github.com/OpenRA/OpenRA/wiki).
 
 Install missing dependencies if needed:
 

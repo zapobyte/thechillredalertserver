@@ -1,10 +1,10 @@
 #!/bin/sh
 
-# OpenRA Server script to update motd.txt server message with a drawing in ASCII format and number of games played
+# OpenRA Server script used to update Message of the day `motd.txt` server message with custom message and number of games played on the server
 # script made by zapo 
 # http://victorz.me
 # 
-# http://openra.net - OpenRA
+# http://openra.net - OpenRA website
 
 echo "Script Started"
 # configuration variables
@@ -15,14 +15,15 @@ Pm2LogsPath=/home/pi/.pm2/logs/
 MotdFilePath=/home/pi/.openra/motd.txt
 # name identified of logs
 LogFileName="TheChill"
-# draw the drawing into the motd.txt
+# add the body content into the motd.txt
 cat draw.txt > motd.txt
 # get number of players
 GamesPlayed=$(cd $Pm2LogsPath && find . | grep $LogFileName | xargs grep 'Game start' | wc -l)
-# update motd.txt file
+# update motd.txt file with number of games played
 cd $CurrentPath && echo $GamesPlayed >> motd.txt
-LastUpdate="/last update on: $(date)/"
-echo $LastUpdate >> motd.txt
+# last file entry message 
+LastUpdateText="/Server restarts daily between 23:57-23:59 GMT. Last update on: $(date)/"
+echo $LastUpdateText >> motd.txt
 # copy motd.txt to server locations motd.txt
 cp ./motd.txt $MotdFilePath
 echo "Script Done. Output:"

@@ -11,5 +11,5 @@
 OpenRA - https://openra.net
 
 ** Games played on this server:
-229
-/last update on: Thu 11 Jun 02:25:27 BST 2020/
+237
+/Server restarts daily between 23:57-23:59 GMT. Last update on: Thu 11 Jun 16:42:54 BST 2020/
