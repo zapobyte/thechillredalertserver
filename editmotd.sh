@@ -19,10 +19,12 @@ LogFileName="TheChill"
 cat draw.txt > motd.txt
 # get number of players
 GamesPlayed=$(cd $Pm2LogsPath && find . | grep $LogFileName | xargs grep 'Game start' | wc -l)
-# update motd.txt
+# update motd.txt file
 cd $CurrentPath && echo $GamesPlayed >> motd.txt
+LastUpdate="/last update on: $(date)/"
+echo $LastUpdate >> motd.txt
 # copy motd.txt to server locations motd.txt
 cp ./motd.txt $MotdFilePath
-
 echo "Script Done. Output:"
 cat motd.txt
+
