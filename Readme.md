@@ -7,7 +7,7 @@ To join the game use the OpenRA luncher and select The Chill RA server from the 
 
 ## Perks
 
-This server script can also updated the server message shown in ingame chat with a ASCII draw and number of games played on the server. 
+This scripts can also updated the server message shown in game, the `motd.txt` filei, with a ASCII draw and number of games played on the server. 
 
 ## How to use it.
 
